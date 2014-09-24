@@ -8,8 +8,10 @@
 
   <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
   <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <link rel="stylesheet" href="stylesheets/my_style.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript" src="javascripts/my_script.js"></script>
 
   <title>Texts</title>
   <meta name="description" content="">
@@ -31,12 +33,17 @@
         <div class="inner">
           <a href="https://github.com/efueyo/texts/tarball/master" class="download-button tar"><span>Download</span></a>
           <a href="https://github.com/efueyo/texts/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/efueyo/texts" class="code">View Texts on GitHub</a>
+          <a href="https://github.com/efueyo/texts" class="code">Play with texts!</a>
         </div>
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
-          <p>Here you will find some text utilities</p>
+          <textarea rows="10" cols="80" id="text-pool">Write your text here!</textarea>
+          <button type="button" onclick="upperCase($('#text-pool'))">Uppercase!</button>
+          <button type="button" onclick="lowerCase($('#text-pool'))">Lowercase!</button>
+          <button type="button" onclick="capitalize($('#text-pool'))">Capitalize!</button>
+          <button type="button" onclick="random($('#text-pool'))">Random!</button>
+
         </article>
       </div>
     </div>
