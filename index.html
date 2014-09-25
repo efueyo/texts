@@ -48,14 +48,16 @@
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
-          <textarea rows="10" cols="80" id="text-pool">Write your text here!</textarea>
-          <div id="buttons">
+          <div id="text-pool-wrapper">
+            <textarea rows="10" cols="100" id="text-pool">Write your text here!</textarea>
+          </div>
+          <div class="action-buttons" id="buttons">
             <button type="button" onclick="upperCase()">Uppercase!</button>
             <button type="button" onclick="lowerCase()">Lowercase!</button>
             <button type="button" onclick="capitalize()">Capitalize!</button>
             <button type="button" onclick="random()">Random!</button>
           </div>
-          <div id="regex">
+          <div class="action-buttons" id="regex">
             Substitute
             <input type="text" value="here" id='regex-src'>
             by
