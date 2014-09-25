@@ -39,7 +39,7 @@ window.random = function(){
 
 window.regex = function(src,dest){
   var elem = getTextArea();
-  var text = elem.val().toLowerCase();
+  var text = elem.val();
   var src_text  = $('#regex-src').val();
   var dest_text = $('#regex-dest').val();
   var src_regex = new RegExp(src_text,'g');
