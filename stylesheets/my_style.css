@@ -3,6 +3,11 @@
   margin-left: 17px;
   border-radius: 17px;
 }
-#buttons{
+#buttons, #regex{
   text-align: center;
+  margin: 10px;
+}
+
+#regex input{
+  width:50px;
 }
