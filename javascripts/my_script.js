@@ -46,6 +46,15 @@ window.regex = function(src,dest){
   elem.val(text.replace(src_regex,dest_text))
 }
 
+window.reverse = function(){
+  var elem = getTextArea();
+  var text = elem.val().split("").reverse().join("");
+  elem.val(text);
+}
 
-
+window.reverseWords = function(){
+  var elem = getTextArea();
+  var text = elem.val().split("").reverse().join("").split(" ").reverse().join(" ");
+  elem.val(text);
+}
 
